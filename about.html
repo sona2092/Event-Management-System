@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/about.css">                             
+      <crossorigin="anonymous"/>
+<link rel="stylesheet" href="css/sty.css">  
+<link rel="stylesheet" href="css/style1.css">  
+
+      <title>About Us</title>
+	</head>
+	<body>
+	 <section class="nav-bar">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="index.html"><img src="images/bliss.png" alt=""></a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="wed.html">Weddings</a>
+            </li>
+            <li>
+              <a href="soc_gat.html">Social Gatherings</a>
+            </li>
+            <li>
+              <a href="corp_eve.html">Corporate Events</a>
+            </li>
+            <li>
+              <a href="cons.html">Concerts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="gall1.html">Gallery</a>
+        </li>
+        <li>
+          <a href="blog.html">Blogs</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="function.js"></script>
+
+
+    <script type="text/javascript">
+      
+      /** code by webdevtrick ( https://webdevtrick.com ) **/
+(function($) { 
+  $(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); 
+})(jQuery);
+    </script>
+          <div class="container">
+            <img src="images/img3.src.jpg" alt="">
+          <div class="about_details">
+           <span>About Us</span><hr>
+          <h1> We Provide Awesomeness!</h1>
+          <p style="font-family:sans-serif"> Pure Bliss is best event management organizer which looks into providing high quality and professional services for wedding,birthday
+              parties,theme parties,corporate events and & many more whether you wish for small or large scale or an exotic event,we will make your event special and memorable.</p>
+          <br>
+          <p style="font-family:sans-serif">Our focus remains to deliver what we promise and future customer satisfaction by providing them many more than what they except to cooperate                            with us. Our services can successfully meet your demands at any scale. All are ready to do whatever it takes to make your special days even more special !!!.</p>   
+        </div>
+      </div>
+
+<section>
+    <h1 class="title">our team</h1>
+    <div class="team-row">
+        <div class="member">
+          <img src="images/img16.jpg" alt="">
+            <h2>SONALI KUMARI</h2>
+            <p>DESIGNER</p>
+        </div>
+        <div class="member">
+          <img src="images/ig8.jpg" alt="">
+            <h2>SIMA JAYPURIA</h2>
+            <p>DESIGNER</p>
+        </div>
+        <div class="member">
+          <img src="images/ig9.jpg" alt="">
+            <h2>NUTTAN SAHOO</h2>
+            <p>DESIGNER</p>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

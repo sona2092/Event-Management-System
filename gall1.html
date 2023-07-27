@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width-device-width, initial-scale-1.0">
+ <title>Gallery</title>
+ <!-- CUSTOM CSS -->
+ <link rel="stylesheet" href="css/style1.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section class="nav-bar">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="index.html"><img src="images/bliss.png" alt=""></a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="wed.html">Weddings</a>
+            </li>
+            <li>
+              <a href="soc_gat.html">Social Gatherings</a>
+            </li>
+            <li>
+              <a href="corp_eve.html">Corporate Events</a>
+            </li>
+            <li>
+              <a href="cons.html">Concerts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="gall1.html">Gallery</a>
+        </li>
+        <li>
+          <a href="blog.html">Blogs</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="function.js"></script>
+
+
+    <script type="text/javascript">
+      
+      /** code by webdevtrick ( https://webdevtrick.com ) **/
+(function($) { 
+  $(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); 
+})(jQuery);
+    </script>
+<input type="radio" name="Photos" id="check1" checked>
+<input type="radio" name="Photos" id="check2">
+<input type="radio" name="Photos" id="check3">
+<input type="radio" name="Photos" id="check4">
+
+<div class="container">
+	<h1>PHOTO GALLERY</h1>
+	<div class="top-content">
+	<h3>Photo Gallery</h3>
+		<label for="check1"></label>
+		<label for="check2"></label>
+		<label for="check3"></label>
+		<label for="check4"></label>
+		</div>
+
+       <div class="photo-gallery">
+	<div class="pic weed">
+    <img src="images/im1.jpeg" alt="">
+	</div>
+	<div class="pic corporate">
+    <img src="images/img9.jpg" alt="">
+	</div>
+	<div class="pic social gathering">
+    <img src="images/img5.jpg" alt="">
+	</div>
+      <div class="pic weed">
+        <img src="images/im2.jpg" alt="">
+	</div>
+	<div class="pic corporate">
+    <img src="images/img10.jpg" alt="">
+	</div>
+	<div class="pic social gathering">
+    <img src="images/img6.jpg" alt="">
+	</div>
+      <div class="pic weed">
+        <img src="images/im3.jpg" alt="">
+	</div>
+	<div class="pic corporate">
+    <img src="images/img11.jpg" alt="">
+	</div>
+	<div class="pic social gathering">
+    <img src="images/img7.jpg" alt="">
+	</div>
+      <div class="pic weed">
+        <img src="images/im4.jpg" alt="">
+	</div>
+	<div class="pic corporate">
+    <img src="images/img13.jpg" alt="">
+	</div>
+	<div class="pic social gathering">
+    <img src="images/img8.jpg" alt="">
+	</div>
+      <div class="pic weed">
+        <img src="images/image1.jpg" alt="">
+	</div>
+	<div class="pic corporate">
+    <img src="images/image2.jpg" alt="">
+	</div>
+	<div class="pic social gathering">
+    <img src="images/image3.jpg" alt="">
+	</div>
+        <div class="pic social gathering">
+          <img src="images/image4.jpg" alt="">
+	</div>
+</div>
+</div>
+
+</body>
+</html>

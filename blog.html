@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+   
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style5.css">
+
+</head>
+<body>
+<section class="nav-bar">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="index.html"><img src="images/bliss.png" alt=""></a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#">Weddings</a>
+            </li>
+            <li>
+              <a href="#">Social Gatherings</a>
+            </li>
+            <li>
+              <a href="#">Corporate Events</a>
+            </li>
+            <li>
+              <a href="#">Concerts</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="gall1.html">Gallery</a>
+        </li>
+        <li>
+          <a href="blog.html">Blogs</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="function.js"></script>
+
+
+    <script type="text/javascript">
+      
+      /** code by webdevtrick ( https://webdevtrick.com ) **/
+(function($) { 
+  $(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); 
+})(jQuery);
+    </script>
+<!-- blog section starts  -->
+
+<section class="blog" id="blog">
+
+    <div class="heading">
+        <h1>our blogs</h1>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+          <img src="images/blo-1.png" alt="">
+            <div class="info">
+                <h4> <span>01. </span>A celebration of unmatched grandeur at Taj Lake Palace and other iconic Udaipur properties </h4>
+                <p>An unforgettable blend of beguiling decor and glamorous festivities, Anushkha and Jeet Marwadi’s picturesque 
+                Reception in Taj was designed and executed to perfection by our events.
+                They tied the knot amidst the iconic opulence of Taj Lake Palace which combined royalty and serenity to present a perfect setting for such an auspicious occasion. </p>
+            </div>
+        </div>
+        <div class="box">
+          <img src="images/blog-4.jpg" alt="">
+            <div class="info">
+                <h4> <span>02. </span>Hedley with headphones:The Quietest Concert Ever!</h4>
+                <p>Twinkling lights and tons of green foliage seamlessly tied into the natural greenery while setting a magical atmosphere, elevated withglam red, 
+                 candles and glimmering chandeliers overhead.Softly lit 3D floral installations and individual LED flowers filled the concert hall like a magical meadow, while neon structures
+                 delicately illuminated the whole space done by us. </p>
+            </div>
+        </div>
+        <div class="box">
+          <img src="images/blog-3.jpg" alt="">
+            <div class="info">
+                <h4> <span>03. </span>From the magic of Agrabah to Met Gala’s glamor, this Birthday took creativity to new heights!</h4>
+                <p>The guests arrived in great style on a plane that was specially chartered for the celebration.
+                 A plethora of different crafts which included woven rattan baskets of flowers,colorful thread elements,
+                 hand-painted pots and local arts and more. Favor stations, an ice-gola corner, live music and a lot more kicked off the celebrations on a merry note.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blog section ends---->
+</body>
+</html>
