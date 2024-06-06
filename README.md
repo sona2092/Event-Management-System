@@ -9,8 +9,7 @@ The Event Management System is a comprehensive web application designed to manag
 - `src`: Contains the PHP source code for the application.
 - `public`: Public assets such as images and stylesheets.
 - `config`: Configuration files for the application.
-- `index.php`: The main PHP file.
-- `vendor`: Directory for Composer dependencies.
+- `index.html`: The main file - Home Page.
 
 ## Features
 
